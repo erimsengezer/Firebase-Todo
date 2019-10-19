@@ -109,18 +109,15 @@
 		E5CB3C64235A7EA8003C743F /* TODO */ = {
 			isa = PBXGroup;
 			children = (
-				E5CB3C65235A7EA8003C743F /* AppDelegate.swift */,
-				E5CB3C67235A7EA8003C743F /* SceneDelegate.swift */,
-				E5CB3C6C235A7EA8003C743F /* ContentView.swift */,
+				E5F0099E235B553400877CD1 /* Model */,
+				E5F0099F235B553D00877CD1 /* View */,
+				E5F009A0235B554800877CD1 /* ViewModel */,
 				E5CB3C6E235A7EAB003C743F /* Assets.xcassets */,
+				E5CB3C67235A7EA8003C743F /* SceneDelegate.swift */,
 				E5CB3C73235A7EAB003C743F /* LaunchScreen.storyboard */,
 				E5CB3C76235A7EAB003C743F /* Info.plist */,
 				E5CB3C69235A7EA8003C743F /* TODO.xcdatamodeld */,
 				E5CB3C70235A7EAB003C743F /* Preview Content */,
-				E5CB3C98235A8081003C743F /* LoginScreen.swift */,
-				E5CB3C9A235A8358003C743F /* LoginButton.swift */,
-				E5F0099A235B4B3B00877CD1 /* FacebookButton.swift */,
-				E5F0099C235B4D1300877CD1 /* TwitterButton.swift */,
 			);
 			path = TODO;
 			sourceTree = "<group>";
@@ -149,6 +146,33 @@
 				E5CB3C8C235A7EAC003C743F /* Info.plist */,
 			);
 			path = TODOUITests;
+			sourceTree = "<group>";
+		};
+		E5F0099E235B553400877CD1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5F0099F235B553D00877CD1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E5CB3C65235A7EA8003C743F /* AppDelegate.swift */,
+				E5CB3C9A235A8358003C743F /* LoginButton.swift */,
+				E5F0099A235B4B3B00877CD1 /* FacebookButton.swift */,
+				E5F0099C235B4D1300877CD1 /* TwitterButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5F009A0235B554800877CD1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E5CB3C6C235A7EA8003C743F /* ContentView.swift */,
+				E5CB3C98235A8081003C743F /* LoginScreen.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
