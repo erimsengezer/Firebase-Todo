@@ -14,7 +14,9 @@ struct TwitterButton: View {
             print("twitter")
         }) {
             Image("twittericon")
+                .resizable()
                 .foregroundColor(Color.gray)
+                .aspectRatio(contentMode: .fit)
         }
     }
 }
