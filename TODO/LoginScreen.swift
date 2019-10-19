@@ -26,17 +26,6 @@ struct LoginScreen: View {
                 .padding()
             
             AuthButton(buttonTitle: "Login")
-            
-//            Button(action: {
-//                print("Login")
-//            }) {
-//                Text("Login")
-//                    .foregroundColor(Color.gray)
-//            }
-//                .padding()
-//                .frame(width: UIScreen.main.bounds.width * 0.40, height: UIScreen.main.bounds.height * 0.05)
-            
-        
         }
     }
 }
