@@ -18,6 +18,10 @@
 		E5CB3C8B235A7EAC003C743F /* TODOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C8A235A7EAC003C743F /* TODOUITests.swift */; };
 		E5CB3C99235A8081003C743F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C98235A8081003C743F /* LoginScreen.swift */; };
 		E5CB3C9B235A8358003C743F /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C9A235A8358003C743F /* LoginButton.swift */; };
+		E5DDCAB2235B89CD0038BB07 /* RegisterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCAB1235B89CD0038BB07 /* RegisterScreen.swift */; };
+		E5DDCAB4235B8AE50038BB07 /* SelectImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCAB3235B8AE50038BB07 /* SelectImage.swift */; };
+		E5DDCAB6235B97A80038BB07 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCAB5235B97A80038BB07 /* ImagePicker.swift */; };
+		E5DDCAB8235BBF7A0038BB07 /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5DDCAB7235BBF790038BB07 /* RegisterButton.swift */; };
 		E5F0099B235B4B3B00877CD1 /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0099A235B4B3B00877CD1 /* FacebookButton.swift */; };
 		E5F0099D235B4D1300877CD1 /* TwitterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0099C235B4D1300877CD1 /* TwitterButton.swift */; };
 /* End PBXBuildFile section */
@@ -55,8 +59,12 @@
 		E5CB3C86235A7EAC003C743F /* TODOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TODOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CB3C8A235A7EAC003C743F /* TODOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOUITests.swift; sourceTree = "<group>"; };
 		E5CB3C8C235A7EAC003C743F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5CB3C98235A8081003C743F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		E5CB3C98235A8081003C743F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 1; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E5CB3C9A235A8358003C743F /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		E5DDCAB1235B89CD0038BB07 /* RegisterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterScreen.swift; sourceTree = "<group>"; };
+		E5DDCAB3235B8AE50038BB07 /* SelectImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImage.swift; sourceTree = "<group>"; };
+		E5DDCAB5235B97A80038BB07 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E5DDCAB7235BBF790038BB07 /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
 		E5F0099A235B4B3B00877CD1 /* FacebookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
 		E5F0099C235B4D1300877CD1 /* TwitterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,8 +168,11 @@
 			children = (
 				E5CB3C65235A7EA8003C743F /* AppDelegate.swift */,
 				E5CB3C9A235A8358003C743F /* LoginButton.swift */,
+				E5DDCAB7235BBF790038BB07 /* RegisterButton.swift */,
 				E5F0099A235B4B3B00877CD1 /* FacebookButton.swift */,
 				E5F0099C235B4D1300877CD1 /* TwitterButton.swift */,
+				E5DDCAB3235B8AE50038BB07 /* SelectImage.swift */,
+				E5DDCAB5235B97A80038BB07 /* ImagePicker.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +182,7 @@
 			children = (
 				E5CB3C6C235A7EA8003C743F /* ContentView.swift */,
 				E5CB3C98235A8081003C743F /* LoginScreen.swift */,
+				E5DDCAB1235B89CD0038BB07 /* RegisterScreen.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -306,11 +318,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5DDCAB8235BBF7A0038BB07 /* RegisterButton.swift in Sources */,
 				E5CB3C66235A7EA8003C743F /* AppDelegate.swift in Sources */,
 				E5CB3C9B235A8358003C743F /* LoginButton.swift in Sources */,
 				E5CB3C6B235A7EA8003C743F /* TODO.xcdatamodeld in Sources */,
+				E5DDCAB2235B89CD0038BB07 /* RegisterScreen.swift in Sources */,
 				E5F0099B235B4B3B00877CD1 /* FacebookButton.swift in Sources */,
+				E5DDCAB4235B8AE50038BB07 /* SelectImage.swift in Sources */,
 				E5CB3C6D235A7EA8003C743F /* ContentView.swift in Sources */,
+				E5DDCAB6235B97A80038BB07 /* ImagePicker.swift in Sources */,
 				E5F0099D235B4D1300877CD1 /* TwitterButton.swift in Sources */,
 				E5CB3C68235A7EA8003C743F /* SceneDelegate.swift in Sources */,
 				E5CB3C99235A8081003C743F /* LoginScreen.swift in Sources */,

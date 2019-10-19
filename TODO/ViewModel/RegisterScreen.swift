@@ -1,5 +1,5 @@
 //
-//  LoginScreen.swift
+//  RegisterScreen.swift
 //  TODO
 //
 //  Created by Erim Şengezer on 19.10.2019.
@@ -8,40 +8,52 @@
 
 import SwiftUI
 
-struct LoginScreen: View {
+struct RegisterScreen: View {
+    
     @State var email = ""
     @State var password = ""
     var body: some View {
         ZStack{
-//            Color(red: 84 / 255, green: 116 / 255, blue: 153 / 255)
-            Image("secondbackground")
-                .resizable()
+            Image("secondbackground").resizable()
                 .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 1.1)
                 .scaledToFill()
-                .aspectRatio(contentMode: .fill)
+                .aspectRatio(0.90, contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
-            VStack {
-                Text("Login")
-                    .font(.largeTitle)
-                    .fontWeight(.heavy)
-                    .frame(width: UIScreen.main.bounds.width * 0.90, height: UIScreen.main.bounds.height * 0.10)
-                    .foregroundColor(Color.gray)
+            
+            VStack{
+                Text("Register")
+                   .fontWeight(.heavy)
+                   .font(.largeTitle)
+                   .foregroundColor(Color.gray)
+                   .frame(width: UIScreen.main.bounds.width * 0.7, height: UIScreen.main.bounds.height * 0.07)
+                   
+                
+                SelectImage().frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height * 0.3)
+                
+                HStack{
+                    Image("user")
+                        .resizable()
+                        .frame(width: UIScreen.main.bounds.width * 0.1, height: UIScreen.main.bounds.height * 0.05)
+                    TextField("Username", text: $email)
+                        .frame(width: UIScreen.main.bounds.width * 0.70, height: UIScreen.main.bounds.height * 0.02)
+                        .padding()
+                        .foregroundColor(Color.white)
+                        .background(Color.black.opacity(0.33))
+                    
+                }
                 
                 HStack{
                     Image("emailicon")
                         .resizable()
                         .frame(width: UIScreen.main.bounds.width * 0.1, height: UIScreen.main.bounds.height * 0.05)
-                    TextField("Email Adress", text: $email)
+                    TextField("Email Address", text: $email)
                         .frame(width: UIScreen.main.bounds.width * 0.70, height: UIScreen.main.bounds.height * 0.02)
                         .padding()
                         .foregroundColor(Color.white)
                         .background(Color.black.opacity(0.33))
-//                        .border(Color(white: 0.75))
-
-                }.padding()
-                
-                
                     
+                }
+                
                 HStack{
                     Image("passwordicon")
                         .resizable()
@@ -53,17 +65,15 @@ struct LoginScreen: View {
                         .background(Color.black.opacity(0.33))
                 }
                 
-                
-                
-                LoginButton(buttonTitle: "Login")
-                    .padding(50)
+                RegisterButton(buttonTitle: "Register").padding()
                 
                 VStack{
                     Text("Or")
                         .fontWeight(.light)
+                        .padding(.top, UIScreen.main.bounds.height * 0.01)
                         
                     Text("Login with")
-                        .padding()
+                        .fontWeight(.light)
                 }
                 
                 HStack{
@@ -75,31 +85,22 @@ struct LoginScreen: View {
                         .padding()
                         .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.1)
                 }
-
-
-                Button(action: {
-                    print("register")
-                }){
-                    Text("Register")
-                        .font(.subheadline)
-                        .fontWeight(.bold)
-                        .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.05)
-                        .foregroundColor(Color.gray)
-                        .padding()
-                }
+                
                 
             }
+            
+           
         }
-        
     }
-    
 }
 
-struct LoginScreen_Previews: PreviewProvider {
+struct RegisterScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-            LoginScreen()
-            
+        RegisterScreen().previewDevice("iPhone SE")
+        RegisterScreen().previewDevice("iPhone 11")
+        RegisterScreen().previewDevice("iPhone 11 Pro Max")
         }
+        
     }
 }
