@@ -16,6 +16,8 @@
 		E5CB3C75235A7EAB003C743F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E5CB3C73235A7EAB003C743F /* LaunchScreen.storyboard */; };
 		E5CB3C80235A7EAB003C743F /* TODOTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C7F235A7EAB003C743F /* TODOTests.swift */; };
 		E5CB3C8B235A7EAC003C743F /* TODOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C8A235A7EAC003C743F /* TODOUITests.swift */; };
+		E5CB3C99235A8081003C743F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C98235A8081003C743F /* LoginScreen.swift */; };
+		E5CB3C9B235A8358003C743F /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C9A235A8358003C743F /* AuthButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		E5CB3C86235A7EAC003C743F /* TODOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TODOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CB3C8A235A7EAC003C743F /* TODOUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOUITests.swift; sourceTree = "<group>"; };
 		E5CB3C8C235A7EAC003C743F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E5CB3C98235A8081003C743F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		E5CB3C9A235A8358003C743F /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				E5CB3C76235A7EAB003C743F /* Info.plist */,
 				E5CB3C69235A7EA8003C743F /* TODO.xcdatamodeld */,
 				E5CB3C70235A7EAB003C743F /* Preview Content */,
+				E5CB3C98235A8081003C743F /* LoginScreen.swift */,
+				E5CB3C9A235A8358003C743F /* AuthButton.swift */,
 			);
 			path = TODO;
 			sourceTree = "<group>";
@@ -271,9 +277,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E5CB3C66235A7EA8003C743F /* AppDelegate.swift in Sources */,
+				E5CB3C9B235A8358003C743F /* AuthButton.swift in Sources */,
 				E5CB3C6B235A7EA8003C743F /* TODO.xcdatamodeld in Sources */,
 				E5CB3C6D235A7EA8003C743F /* ContentView.swift in Sources */,
 				E5CB3C68235A7EA8003C743F /* SceneDelegate.swift in Sources */,
+				E5CB3C99235A8081003C743F /* LoginScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
