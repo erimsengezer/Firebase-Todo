@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct AuthButton: View {
+struct LoginButton : View {
     @State var buttonTitle : String
     var body: some View {
         VStack{
@@ -38,6 +38,6 @@ func hello(){
 
 struct AuthButton_Previews: PreviewProvider {
     static var previews: some View {
-        AuthButton(buttonTitle: "Button")
+        LoginButton(buttonTitle: "Button")
     }
 }

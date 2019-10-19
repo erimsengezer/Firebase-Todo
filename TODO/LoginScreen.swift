@@ -25,7 +25,7 @@ struct LoginScreen: View {
                 .frame(width: UIScreen.main.bounds.width * 0.90, height: UIScreen.main.bounds.height * 0.02)
                 .padding()
             
-            AuthButton(buttonTitle: "Login")
+            LoginButton(buttonTitle: "Login")
         }
     }
 }
