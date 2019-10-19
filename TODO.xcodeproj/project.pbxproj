@@ -18,6 +18,8 @@
 		E5CB3C8B235A7EAC003C743F /* TODOUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C8A235A7EAC003C743F /* TODOUITests.swift */; };
 		E5CB3C99235A8081003C743F /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C98235A8081003C743F /* LoginScreen.swift */; };
 		E5CB3C9B235A8358003C743F /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C9A235A8358003C743F /* LoginButton.swift */; };
+		E5F0099B235B4B3B00877CD1 /* FacebookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0099A235B4B3B00877CD1 /* FacebookButton.swift */; };
+		E5F0099D235B4D1300877CD1 /* TwitterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F0099C235B4D1300877CD1 /* TwitterButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		E5CB3C8C235A7EAC003C743F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E5CB3C98235A8081003C743F /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		E5CB3C9A235A8358003C743F /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		E5F0099A235B4B3B00877CD1 /* FacebookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookButton.swift; sourceTree = "<group>"; };
+		E5F0099C235B4D1300877CD1 /* TwitterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,8 @@
 				E5CB3C70235A7EAB003C743F /* Preview Content */,
 				E5CB3C98235A8081003C743F /* LoginScreen.swift */,
 				E5CB3C9A235A8358003C743F /* LoginButton.swift */,
+				E5F0099A235B4B3B00877CD1 /* FacebookButton.swift */,
+				E5F0099C235B4D1300877CD1 /* TwitterButton.swift */,
 			);
 			path = TODO;
 			sourceTree = "<group>";
@@ -279,7 +285,9 @@
 				E5CB3C66235A7EA8003C743F /* AppDelegate.swift in Sources */,
 				E5CB3C9B235A8358003C743F /* LoginButton.swift in Sources */,
 				E5CB3C6B235A7EA8003C743F /* TODO.xcdatamodeld in Sources */,
+				E5F0099B235B4B3B00877CD1 /* FacebookButton.swift in Sources */,
 				E5CB3C6D235A7EA8003C743F /* ContentView.swift in Sources */,
+				E5F0099D235B4D1300877CD1 /* TwitterButton.swift in Sources */,
 				E5CB3C68235A7EA8003C743F /* SceneDelegate.swift in Sources */,
 				E5CB3C99235A8081003C743F /* LoginScreen.swift in Sources */,
 			);
