@@ -45,9 +45,10 @@
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
@@ -56,5 +57,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>TODO want to use your camera. Just profile picture</string>
+	<key>Privacy - Photo Library  Usage Description</key>
+	<string>TODO want to use your photo. Just profile picture</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>TODO want to use your photo. Just profile picture</string>
 </dict>
 </plist>
