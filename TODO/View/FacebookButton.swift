@@ -17,7 +17,7 @@ struct FacebookButton: View {
                 Image("facebookicon")
                     .resizable()
                     .foregroundColor(Color.gray)
-                    .aspectRatio(contentMode: .fill)
+                    .aspectRatio(contentMode: .fit)
             }
         }
     }
