@@ -30,17 +30,6 @@ struct RegisterButton: View {
         }
     }
     
-    func register() {
-        print("asdasad")
-//        Auth.auth().createUser(withEmail: self.email, password: self.password) { (result, error) in
-//            if error != nil {
-//                print(error?.localizedDescription ?? "Error")
-//                print(self.email)
-//                print(self.password)
-//            }
-//        }
-    }
-    
 }
 
 struct RegisterButton_Previews: PreviewProvider {
