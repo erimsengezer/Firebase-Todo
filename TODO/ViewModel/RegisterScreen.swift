@@ -7,11 +7,13 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct RegisterScreen: View {
     
     @State var email = ""
     @State var password = ""
+    @State var username = ""
     var body: some View {
         ZStack{
             Image("secondbackground").resizable()
@@ -34,7 +36,7 @@ struct RegisterScreen: View {
                     Image("user")
                         .resizable()
                         .frame(width: UIScreen.main.bounds.width * 0.1, height: UIScreen.main.bounds.height * 0.05)
-                    TextField("Username", text: $email)
+                    TextField("Username", text: $username)
                         .frame(width: UIScreen.main.bounds.width * 0.70, height: UIScreen.main.bounds.height * 0.02)
                         .padding()
                         .foregroundColor(Color.white)
@@ -65,7 +67,12 @@ struct RegisterScreen: View {
                         .background(Color.black.opacity(0.33))
                 }
                 
-                RegisterButton(buttonTitle: "Register").padding()
+//                RegisterButton(buttonTitle: "Register").padding()
+                RegisterButton(buttonTitle: "Register", email: email, password: password).onTapGesture {
+                    print("else")
+                    self.register()
+                    
+                }
                 
                 VStack{
                     Text("Or")
@@ -92,14 +99,25 @@ struct RegisterScreen: View {
            
         }
     }
+    
+    func register() {
+        Auth.auth().createUser(withEmail: self.email, password: self.password) { (result, error) in
+            if error != nil {
+                print(error?.localizedDescription ?? "Error")
+                print(self.email)
+                print(self.password)
+            }
+        }
+    }
+    
 }
 
 struct RegisterScreen_Previews: PreviewProvider {
     static var previews: some View {
         Group{
-        RegisterScreen().previewDevice("iPhone SE")
-        RegisterScreen().previewDevice("iPhone 11")
-        RegisterScreen().previewDevice("iPhone 11 Pro Max")
+            RegisterScreen().previewDevice("iPhone SE")
+            RegisterScreen().previewDevice("iPhone 11")
+            RegisterScreen().previewDevice("iPhone 11 Pro Max")
         }
         
     }

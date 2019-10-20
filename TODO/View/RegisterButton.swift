@@ -7,14 +7,13 @@
 //
 
 import SwiftUI
-
+import Firebase
 struct RegisterButton: View {
     @State var buttonTitle : String
+    @State var email : String
+    @State var password : String
     var body: some View {
         VStack{
-            Button(action: {
-                hello()
-            }){
                 Text(self.buttonTitle)
                     .fontWeight(.regular)
                     .font(.subheadline)
@@ -25,15 +24,27 @@ struct RegisterButton: View {
                     .shadow(color: Color.black, radius: 1.0)
                     
                     
-            }
+            
             .background(Color.black)
             .cornerRadius(10.0)
         }
     }
+    
+    func register() {
+        print("asdasad")
+//        Auth.auth().createUser(withEmail: self.email, password: self.password) { (result, error) in
+//            if error != nil {
+//                print(error?.localizedDescription ?? "Error")
+//                print(self.email)
+//                print(self.password)
+//            }
+//        }
+    }
+    
 }
 
 struct RegisterButton_Previews: PreviewProvider {
     static var previews: some View {
-        RegisterButton(buttonTitle: "RegisterButton")
+        RegisterButton(buttonTitle: "RegisterButton", email: "", password: "")
     }
 }
