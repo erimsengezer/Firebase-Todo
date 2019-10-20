@@ -14,6 +14,7 @@ struct RegisterScreen: View {
     @State var email = ""
     @State var password = ""
     @State var username = ""
+    let db = Firestore.firestore()
     var body: some View {
         ZStack{
             Image("secondbackground").resizable()
@@ -104,8 +105,17 @@ struct RegisterScreen: View {
         Auth.auth().createUser(withEmail: self.email, password: self.password) { (result, error) in
             if error != nil {
                 print(error?.localizedDescription ?? "Error")
-                print(self.email)
-                print(self.password)
+            }else {
+                var ref : DocumentReference? = nil
+                
+                let userArray : [String : Any] = ["username" : self.username, "email" : self.email, "useridFromFirebase" : result!.user.uid]
+                
+                
+                ref = self.db.collection("Users").addDocument(data: userArray, completion: { (error) in
+                    if error != nil {
+                        print(error?.localizedDescription ?? "Error")
+                    }
+                })
             }
         }
     }
