@@ -9,6 +9,8 @@
 import SwiftUI
 import Firebase
 import FirebaseFirestore
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 struct RegisterScreen: View {
     
@@ -86,9 +88,62 @@ struct RegisterScreen: View {
                 }
                 
                 HStack{
-                    FacebookButton()
+                    Button(action: {
+                        let loginManager = LoginManager()
+                        
+                        loginManager.logIn(permissions: ["public_profile","email"], from: self.body as? UIViewController) { (result, error) in
+                            if let error = error {
+                                print("Failed to login: \(error.localizedDescription)")
+                                return
+                            }else{
+                                Profile.loadCurrentProfile { (profile, error) in
+                                    if error == nil {
+                                        print("First Name: \(profile!.firstName!)")
+                                        print("Last Name: \(profile!.lastName!)")
+                                        print(profile?.imageURL(forMode: .normal, size: CGSize(width: 100, height: 100))! as Any)
+                                        
+                                    }
+                                }
+                            }
+                            guard let accessToken = AccessToken.current else {
+                                print("Failed to get access token")
+                                return
+                            }
+                            
+                            let credential = FacebookAuthProvider.credential(withAccessToken: accessToken.tokenString)
+                            
+//                            Auth.auth().signInAndRetrieveData(with: credential) { (user, error) in
+//                                  if let error = error {
+//                                      print("Login error: \(error.localizedDescription)")
+//                                      return
+//                                    }
+//                            }
+                            
+                            Auth.auth().signIn(with: credential) { (user, error) in
+                                if let error = error {
+                                    print("Login error: \(error.localizedDescription)")
+                                }else {
+                                    print("Login !")
+                                    
+//                                    var ref : DocumentReference? = nil
+//
+//                                    let userArray : [String : Any] = ["username" : user?.additionalUserInfo?.username, "email" : self.email, "useridFromFirebase" : result!.user.uid]
+//
+//
+//                                    ref = self.db.collection("Users").addDocument(data: userArray, completion: { (error) in
+//                                        if error != nil {
+//                                            print(error?.localizedDescription ?? "Error")
+//                                        }
+//                                    })
+                                }
+                            }
+                            
+                        }
+                    }){
+                        FacebookButton()
                         .padding()
                         .frame(width: UIScreen.main.bounds.width * 0.2, height: UIScreen.main.bounds.height * 0.1)
+                    }
                     
                     TwitterButton()
                         .padding()

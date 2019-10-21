@@ -7,20 +7,22 @@
 //
 
 import SwiftUI
+import Firebase
+import FirebaseAuth
+import FirebaseFirestore
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 struct FacebookButton: View {
     var body: some View {
         HStack{
-            Button(action: {
-                print("facebook")
-            }) {
                 Image("facebookicon")
                     .resizable()
                     .foregroundColor(Color.gray)
                     .aspectRatio(contentMode: .fit)
-            }
         }
     }
+    
 }
 
 struct FacebookButton_Previews: PreviewProvider {

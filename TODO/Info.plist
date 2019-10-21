@@ -63,5 +63,29 @@
 	<string>TODO want to use your photo. Just profile picture</string>
 	<key>NSAppleMusicUsageDescription</key>
 	<string>TODO want to use your photo. Just profile picture</string>
+    
+
+    <key>CFBundleURLTypes</key>
+    <array>
+      <dict>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>fb406780033334581</string>
+      </array>
+      </dict>
+    </array>
+    <key>FacebookAppID</key>
+    <string>406780033334581</string>
+    <key>FacebookDisplayName</key>
+    <string>com.erimsengezer.TODO</string>
+    
+
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+      <string>fbapi</string>
+      <string>fb-messenger-share-api</string>
+      <string>fbauth2</string>
+      <string>fbshareextension</string>
+    </array>
 </dict>
 </plist>

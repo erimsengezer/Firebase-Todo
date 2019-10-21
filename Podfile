@@ -4,6 +4,12 @@
 target 'TODO' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
+
+pod 'FBSDKCoreKit'  
+pod 'FBSDKLoginKit'
+pod 'FBSDKShareKit'
+pod 'FBSDKPlacesKit'
+
 # add the Firebase pod for Google Analytics
 pod 'Firebase/Analytics'
 pod 'Firebase/Analytics'
