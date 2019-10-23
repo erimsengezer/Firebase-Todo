@@ -13,6 +13,7 @@
 		E5702EB5235D4F710025088D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5702EB4235D4F710025088D /* FBSDKCoreKit.framework */; };
 		E5702EB7235D4F8E0025088D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5702EB6235D4F8E0025088D /* FBSDKLoginKit.framework */; };
 		E5702EBA235D504F0025088D /* Facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = E5702EB9235D504F0025088D /* Facebook.m */; };
+		E57B82C72361049900D040E9 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57B82C62361049900D040E9 /* ListScreen.swift */; };
 		E5CB3C66235A7EA8003C743F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C65235A7EA8003C743F /* AppDelegate.swift */; };
 		E5CB3C68235A7EA8003C743F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C67235A7EA8003C743F /* SceneDelegate.swift */; };
 		E5CB3C6B235A7EA8003C743F /* TODO.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E5CB3C69235A7EA8003C743F /* TODO.xcdatamodeld */; };
@@ -63,6 +64,7 @@
 		E5702EB6235D4F8E0025088D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		E5702EB8235D504E0025088D /* TODO-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TODO-Bridging-Header.h"; sourceTree = "<group>"; };
 		E5702EB9235D504F0025088D /* Facebook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Facebook.m; sourceTree = "<group>"; };
+		E57B82C62361049900D040E9 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
 		E5CB3C62235A7EA8003C743F /* TODO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TODO.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5CB3C65235A7EA8003C743F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E5CB3C67235A7EA8003C743F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 				E5CB3C6C235A7EA8003C743F /* ContentView.swift */,
 				E5CB3C98235A8081003C743F /* LoginScreen.swift */,
 				E5DDCAB1235B89CD0038BB07 /* RegisterScreen.swift */,
+				E57B82C62361049900D040E9 /* ListScreen.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -502,6 +505,7 @@
 				E5DDCAB4235B8AE50038BB07 /* SelectImage.swift in Sources */,
 				E5CB3C6D235A7EA8003C743F /* ContentView.swift in Sources */,
 				E5DDCAB6235B97A80038BB07 /* ImagePicker.swift in Sources */,
+				E57B82C72361049900D040E9 /* ListScreen.swift in Sources */,
 				E5F0099D235B4D1300877CD1 /* TwitterButton.swift in Sources */,
 				E5CB3C68235A7EA8003C743F /* SceneDelegate.swift in Sources */,
 				E5CB3C99235A8081003C743F /* LoginScreen.swift in Sources */,
