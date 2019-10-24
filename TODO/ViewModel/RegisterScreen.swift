@@ -112,7 +112,7 @@ struct RegisterScreen: View {
                    
                 }
                 }
-            }.navigationBarHidden(true)
+            }
     }
     
     func register() {
