@@ -10,9 +10,16 @@ import SwiftUI
 
 struct ListScreen: View {
     var body: some View {
-        List{
-           Text("List Screen")
-        }.navigationBarTitle(Text("Lists"))
+        NavigationView{
+            List{
+                NavigationLink(destination: TaskScreen()) {
+                    Text("List Screen")
+                }
+                Text("List Screen")
+               
+                }.navigationBarTitle(Text("Lists"))
+        }
+        
     }
 }
 
