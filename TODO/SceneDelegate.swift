@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -21,17 +22,27 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
         // Get the managed object context from the shared persistent container.
         let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-
+        let currentUser = Auth.auth().currentUser
+        
         // Create the SwiftUI view and set the context as the value for the managedObjectContext environment keyPath.
         // Add `@Environment(\.managedObjectContext)` in the views that will need the context.
-        let contentView = ContentView().environment(\.managedObjectContext, context)
+//        let contentView = ContentView().environment(\.managedObjectContext, context)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
-            let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: LoginScreen())
-            self.window = window
-            window.makeKeyAndVisible()
+            if currentUser != nil {
+                let window = UIWindow(windowScene: windowScene)
+                window.rootViewController = UIHostingController(rootView: ListScreen().navigationBarHidden(true).navigationBarBackButtonHidden(true))
+                self.window = window
+                window.makeKeyAndVisible()
+            }else{
+                let window = UIWindow(windowScene: windowScene)
+                window.rootViewController = UIHostingController(rootView: LoginScreen().navigationBarHidden(true).navigationBarBackButtonHidden(true))
+                self.window = window
+                window.makeKeyAndVisible()
+                
+            }
+            
         }
     }
 
